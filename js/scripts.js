@@ -16,39 +16,38 @@ window.onload = function () {
     else {
       underAgeMessage.removeAttribute("class")
     }
-  }
   let likesCats = document.getElementById("cat-button");
-  likesCats.setAttribute("class", "hidden");
-  let likesDogs = document.getElementById("dog-button");
-  likesDogs.setAttribute("class", "hidden");
-  let likesSticks = document.getElementById("likes-sticks");
-  likesSticks.setAttribute("class", "hidden")
-  let dislikesSticks = document.getElementById("dislikes-sticks");
-  dislikesSticks.setAttribute("class", "hidden")
+  let likesDogs = document.getElementById("dog-button"); 
+  likesDogs.onclick = function(){
+    console.log(likesDogs, age)
+  //let likesSticks = document.getElementById("likes-sticks"); 
+  //let dislikesSticks = document.getElementById("dislikes-sticks");
+  
   let chewieSnape = document.getElementById("chewie");
   chewieSnape.setAttribute("class","hidden")
   let jointP = document.getElementById("joint");
   jointP.setAttribute("class","hidden")
-  let arrowR = document.getElementById("row");
-  arrowR.setAttribute("class","hidden")
-  let indyD = document.getElementById("Indy");
-  indyD.setAttribute("class","hidden")
+  //let arrowR = document.getElementById("row");
+  //arrowR.setAttribute("class","hidden")
+  //let indyD = document.getElementById("Indy");
+  //indyD.setAttribute("class","hidden")
   
-  if (age >= 18 && likesCats && likesSticks) {
-    indyD.removeAttribute("hidden");
+  //if (age >= 18 && likesCats && likesSticks) {
+    //indyD.removeAttribute("hidden");
 
-  } else if 
-  (age >= 18 && likesCats && dislikesSticks) {
-      arrowR.removeAttribute("hidden"); 
+  //} else if 
+  //(age >= 18 && likesCats && dislikesSticks) {
+    //  arrowR.removeAttribute("hidden"); }
     
-  } else if 
-    (age >= 18 && likesDogs && likesSticks) {
+  if 
+    (age >= 18 && likesDogs) {
       chewieSnape.removeAttribute("hidden");
 
   } else 
-    (age >= 18 && likesDogs && dislikesSticks)
+    (age >= 18 && likesDogs)
       jointP.removeAttribute("hidden");
-    
+    }
+  }
 };
 
 
