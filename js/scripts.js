@@ -6,7 +6,7 @@ window.onload = function(){
     let underAgeMessage = document.getElementById("underAge");
     underAgeMessage.setAttribute("class", "hidden");
     let ofAgeMessage = document.getElementById("ofAge");
-    ofAgeMessage = setAttribute("class", "hidden");
+    ofAgeMessage.setAttribute("class", "hidden");
 
     let age = parseInt(document.querySelector("input#age").value);
 
