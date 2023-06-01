@@ -4,9 +4,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Are you ready to vote?</title>
 </head>
 <body>
-  
+  <h1>It's that time of year again!</h1>
+  <h2>Are you ready to vote?</h2>
+  <h3>Do you know who you're going to vote for?</h3>
+  <div>
+    <form>
+      <p>Before you start! Are you over the age of 18?</p>
+      <input id="age" type="number">
+      <button type="submit">Tell me if I can vote!</button>
+    </form>
+  </div>
+  <div id="underAge" class="hidden">
+    <p>Sorry but you're too young to vote. Come back when you're 18 or older!</p>
+  </div>
+  <div id="ofAge" class="hidden">
+    <p>You can vote! Make sure to vote to choose between these candiates:</p>
+  </div>
 </body>
 </html>
